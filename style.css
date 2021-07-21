@@ -18,3 +18,14 @@
 #trybewarts-header-title {
   margin: auto;
 }
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  background-color: brown;
+  flex-direction: column;
+}
