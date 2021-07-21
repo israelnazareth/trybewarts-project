@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -30,6 +35,23 @@ main {
   flex-direction: column;
 }
 
+#evaluation-form:nth-child( n ) {
+  padding: 5px;
+  margin: 2px;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#fullName {
+  display: flex;
+}
+
+#input-name {
+  width: 50%;
+}
+
+#input-lastname {
+  width: 50%;
 }
