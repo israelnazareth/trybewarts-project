@@ -29,3 +29,7 @@ main {
   background-color: brown;
   flex-direction: column;
 }
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
