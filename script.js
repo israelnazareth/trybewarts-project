@@ -3,6 +3,8 @@ const login = document.getElementById('login');
 const password = document.getElementById('password');
 const submitButton = document.getElementById('submit-btn');
 const checkboxAgree = document.getElementById('agreement');
+const textArea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
 
 function loginAlert(event) {
   if (login.value !== 'tryber@teste.com' && password.value !== '123456') {
@@ -20,3 +22,7 @@ function submitEnable() {
     submitButton.disabled = true;
   }
 } checkboxAgree.addEventListener('click', submitEnable);
+
+function counterCaracter() {
+  counter.innerText = textArea.maxLength - textArea.value.length;
+} textArea.addEventListener('keyup', counterCaracter);
